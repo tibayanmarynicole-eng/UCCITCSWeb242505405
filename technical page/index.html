@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VS Code Documentation</title>
+        <link rel="stylessheet" href="styles.css">
+    </head>
+    <body>
+    <nav id="navbar">
+        <header>VS Code Documentation</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Getting_Started" class="nav-link">Getting Started</a>
+        <a href="#User_Interface" class="nav-link">User Interface</a>
+        <a href="Basic_Editing" class="nav-link">Basic Editing</a>
+        <a href="#Extentions" class="nav-link">Extentions</a>
+        <a href="#Settings" class="nav-link">Settings</a>
+        <a href="Keyboard_Shortcuts" class="nav-link">Keyboard Shortcuts</a>
+        <a href="Reference" class="nav-link">Reference</a>
+    </nav>
+
+    <main id="main doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes.</p>
+
+            <p>Here are some basic editing features you should know about:</p>
+            <ul>
+                <li>Multiple selections (multi-cursor) - Add additional cursors to select and edit text in multiple locations</li>
+                <li>Column (box) selection - Select blocks of text using column selection mode</li>
+                <li>Fast scrolling - Press the Alt key to fast scroll through your file</li>
+                <li>Copy line up/down - Quickly duplicate lines of code</li>
+            </ul>
+
+            <p>VS Code also has rich formatting support. You can format your entire document or just the current selection with the Format Document and Format Selection commands.</p>
+
+            <code>Shift+Alt+F - Format document</code>
+        </section>
+
+        <section class="main-section" id="#Getting_Started">
+            <header>Getting Started</header>
+            <p>Getting up and running with Visual Studio Code is quick and easy. It is a small download so you can install it in a matter of minutes and give VS Code a try.</p>
+            
+        </section>
+
+        <section class="main-section" id="Extentions">
+            <header>Extentions</header>
+            <p>Extensions let you add languages, debuggers, and tools to your installation to support your development workflow. VS Code's rich extensibility model lets extension authors plug directly into the VS Code UI and contribute functionality through the same APIs used by VS Code.</p>
+
+            <p>You can browse and install extensions from within VS Code. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or using the View: Extensions command.</p>
+
+            <code>Ctrl+Shift+X - Show Extentions</code>
+
+            <p>Popular extensions include:</p>
+            <ul>
+                <li>ESLint - Integrates ESLint JavaScript into VS Code</li>
+                <li>Prettier - Code formatter using prettier</li>
+                <li>Python - Linting, debugging, IntelliSense, and more for Python</li>
+                <li>GitLens - Supercharge Git within VS Code</li>
+                <li>Live Server - Launch a local development server with live reload</li>
+            </ul>
+
+            <p>To install an extension, simply click the Install button. Once the installation is complete, the Install button will change to a Manage gear button.</p>
+        </section>
+        
+        <section class="main-section" id="Settings">
+            <header>Settings</header>
+            <p>VS Code provides different scopes for settings. When you open a workspace, you will see at least the following two scopes: User Settings and Workspace Settings. User settings apply globally to any instance of VS Code you open, while Workspace settings apply specifically to the current workspace.</p>
+
+            <p>To modify user settings, you can open the settings editor using:</p>
+            <code>Ctrl+, - Open Settings</code>
+
+            <p>You can also edit the settings.json file directly. Here's an example configuration:</p>
+            <code>{
+                "editor.fontsize" : 14,
+                "editor.tabsize": 2,
+                "files.autosave": "afterDelay",
+                "workbench.colorTheme": "Dark+"
+            }</code>
+
+            <p>Common settings to configure include:</p>
+            <ul>
+                <li>Font side and family</li>
+                <li>Tab size and indentation</li>
+                <li>Auto save behavior</li>
+                <li>Color theme</li>
+                <li>File associations</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Keyboard_Shortcuts">
+            <header>Keyboard Shortcuts</header>
+            <p>Visual Studio Code has a rich set of default keyboard shortcuts as well as allowing you to customize them. You can view all default keyboard shortcuts by opening the Keyboard Shortcuts editor.</p>
+
+            <code>Ctrl+K Ctrl+S - Open Keyboard Shortcuts</code>
+
+            <p>Here are some essential keyboard shortcuts to increase your productivity:</p>
+            <ul>
+              <li>Ctrl+P - Quick Open, Go to File</li>
+              <li>Ctrl+Shift+N - New Window/Instance</li>
+              <li>Ctrl+Shift+W - Close Window/Instance</li>
+              <li>Ctrl+X - Cut line (empty selection)</li>
+              <li>Ctrl+C - Copy line (empty selection)</li>  
+            </ul>
+
+            <p>You can also search for shortcuts and add your own keybindings in the keybindings.json file:</p>
+            <code>[{
+                "key":"ctrl+shift+alt+c"
+                "command": "editor.action.commentline"
+            }]</code>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>For more information about Visual Studio Code, you can refer to the following resources:</p>
+            <ul>
+                <li>Official VS Code Documentation - Comprehensive guides and API references</li>
+                <li>VS Code GitHub Repository - Source code and issue tracking</li>
+                <li>VS Code Updates - Monthly release notes and few features</li>
+                <li>VS Code Blog - Articles and tips from the VS Code team</li>
+            </ul>
+
+            <p>All the documentation in this page is based on official Visual Studio Code documentation and resources available at the Microsoft Developer Network.</p>
+        </section>
+    </main>
+    </body>
+</html>
