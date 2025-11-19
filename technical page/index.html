@@ -40,17 +40,79 @@
         <section class="main-section" id="#Getting_Started">
             <header>Getting Started</header>
             <p>Getting up and running with Visual Studio Code is quick and easy. It is a small download so you can install it in a matter of minutes and give VS Code a try.</p>
+
+            <p>To get started with VS Code, you'll want to download and install it from the official website. VS Code is updated monthly with new features and bug fixes. You can download it for Windows, macOS, and Linux on the Visual Studio Code download page.</p>
+
+            <p>After installation, you can immediately start using VS Code. Here's a simple example of opening a folder:</p>
             
+            <code>code /path/to/your/project</code>
+            
+            <p>You can also open VS Code from the command line by typing the following in your project directory. This will open the current directory in VS Code.</p>
+            
+            <code>code .</code>
+            
+            <p>Once VS Code is installed, these topics will help you learn more about it:</p>
+            <ul>
+                <li>User Interface - A quick orientation to VS Code's interface and features</li>
+                <li>Setup - Learn how to set up VS Code to your preferences through settings</li>
+                <li>Languages - VS Code has great support for many programming languages</li>
+                <li>Extensions - Enhance VS Code with additional features and capabilities</li>
+                <li>Debugging - Learn how to debug your code directly in VS Code</li>
+            </ul>
         </section>
 
-        <section class="main-section" id="Extentions">
-            <header>Extentions</header>
+        <section class="main-section" id="User_Interface">
+            <header>User Interface</header>
+            <p>At its heart, Visual Studio Code is a code editor. Like many other code editors, VS Code adopts a common user interface and layout of an explorer on the left, showing all of the files and folders you have access to, and an editor on the right, showing the content of the files you have opened.</p>
+            
+            <p>The VS Code user interface is divided into five main areas:</p>
+            <ul>
+                <li>Editor - The main area to edit your files. You can open as many editors as you like side by side vertically and horizontally</li>
+                <li>Side Bar - Contains different views like the Explorer to assist you while working on your project</li>
+                <li>Status Bar - Information about the opened project and the files you edit</li>
+                <li>Activity Bar - Located on the far left-hand side, lets you switch between views</li>
+                <li>Panels - You can display different panels below the editor region for output or debug information, errors and warnings, or an integrated terminal</li>
+            </ul>
+            
+            <p>Each time you start VS Code, it opens up in the same state it was in when you last closed it. The folder, layout, and opened files are preserved.</p>
+            
+            <p>You can access the Command Palette to execute commands with the following shortcut:</p>
+            
+            <code>Ctrl+Shift+P, F1</code>
+        </section>
+
+        <section class="main-section" id="Basic_Editing">
+            <header>Basic Editing</header>
+            <p>Visual Studio Code is a powerful editor that's easy to use for basic editing tasks. VS Code has great support for many different programming languages and has IntelliSense code completion, snippets, and much more.</p>
+            
+            <p>Here are some basic editing features you should know about:</p>
+            <ul>
+                <li>Multiple selections (multi-cursor) - Add additional cursors to select and edit text in multiple locations</li>
+                <li>Column (box) selection - Select blocks of text using column selection mode</li>
+                <li>Fast scrolling - Press the Alt key to fast scroll through your file</li>
+                <li>Copy line up/down - Quickly duplicate lines of code</li>
+                <li>Move line up/down - Reorder lines of code efficiently</li>
+            </ul>
+            
+            <p>To add multiple cursors, you can use the following keyboard shortcuts:</p>
+            
+            <code>Alt+Click</code>
+            <code>Ctrl+Alt+Down</code>
+            <code>Ctrl+Alt+Up</code>
+            
+            <p>VS Code also has rich formatting support. You can format your entire document or just the current selection with the Format Document and Format Selection commands.</p>
+            
+            <code>Shift+Alt+F</code>
+        </section>
+
+        <section class="main-section" id="Extensions">
+            <header>Extensions</header>
             <p>Extensions let you add languages, debuggers, and tools to your installation to support your development workflow. VS Code's rich extensibility model lets extension authors plug directly into the VS Code UI and contribute functionality through the same APIs used by VS Code.</p>
-
+            
             <p>You can browse and install extensions from within VS Code. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or using the View: Extensions command.</p>
-
-            <code>Ctrl+Shift+X - Show Extentions</code>
-
+            
+            <code>Ctrl+Shift+X</code>
+            
             <p>Popular extensions include:</p>
             <ul>
                 <li>ESLint - Integrates ESLint JavaScript into VS Code</li>
@@ -58,11 +120,14 @@
                 <li>Python - Linting, debugging, IntelliSense, and more for Python</li>
                 <li>GitLens - Supercharge Git within VS Code</li>
                 <li>Live Server - Launch a local development server with live reload</li>
+                <li>Bracket Pair Colorizer - Color matching brackets for better code readability</li>
             </ul>
-
+            
             <p>To install an extension, simply click the Install button. Once the installation is complete, the Install button will change to a Manage gear button.</p>
+            
+            <p>You can search for extensions using keywords and filter by category, popularity, or rating.</p>
         </section>
-        
+   
         <section class="main-section" id="Settings">
             <header>Settings</header>
             <p>VS Code provides different scopes for settings. When you open a workspace, you will see at least the following two scopes: User Settings and Workspace Settings. User settings apply globally to any instance of VS Code you open, while Workspace settings apply specifically to the current workspace.</p>
@@ -91,23 +156,30 @@
         <section class="main-section" id="Keyboard_Shortcuts">
             <header>Keyboard Shortcuts</header>
             <p>Visual Studio Code has a rich set of default keyboard shortcuts as well as allowing you to customize them. You can view all default keyboard shortcuts by opening the Keyboard Shortcuts editor.</p>
-
-            <code>Ctrl+K Ctrl+S - Open Keyboard Shortcuts</code>
-
+            
+            <code>Ctrl+K Ctrl+S</code>
+            
             <p>Here are some essential keyboard shortcuts to increase your productivity:</p>
             <ul>
-              <li>Ctrl+P - Quick Open, Go to File</li>
-              <li>Ctrl+Shift+N - New Window/Instance</li>
-              <li>Ctrl+Shift+W - Close Window/Instance</li>
-              <li>Ctrl+X - Cut line (empty selection)</li>
-              <li>Ctrl+C - Copy line (empty selection)</li>  
+                <li>Ctrl+P - Quick Open, Go to File</li>
+                <li>Ctrl+Shift+N - New window/instance</li>
+                <li>Ctrl+Shift+W - Close window/instance</li>
+                <li>Ctrl+X - Cut line (empty selection)</li>
+                <li>Ctrl+C - Copy line (empty selection)</li>
+                <li>Ctrl+V - Paste</li>
+                <li>Ctrl+Z - Undo</li>
             </ul>
-
+            
             <p>You can also search for shortcuts and add your own keybindings in the keybindings.json file:</p>
-            <code>[{
-                "key":"ctrl+shift+alt+c"
-                "command": "editor.action.commentline"
-            }]</code>
+            
+            <code>[
+  {
+    "key": "ctrl+shift+alt+c",
+    "command": "editor.action.commentLine"
+  }
+]</code>
+            
+            <p>Custom keyboard shortcuts can help you work more efficiently by tailoring the editor to your workflow.</p>
         </section>
 
         <section class="main-section" id="Reference">
@@ -116,11 +188,14 @@
             <ul>
                 <li>Official VS Code Documentation - Comprehensive guides and API references</li>
                 <li>VS Code GitHub Repository - Source code and issue tracking</li>
-                <li>VS Code Updates - Monthly release notes and few features</li>
+                <li>VS Code Updates - Monthly release notes and new features</li>
                 <li>VS Code Blog - Articles and tips from the VS Code team</li>
+                <li>VS Code API Documentation - For extension developers</li>
             </ul>
-
+            
             <p>All the documentation in this page is based on official Visual Studio Code documentation and resources available at the Microsoft Developer Network.</p>
+            
+            <p>You can also join the VS Code community on various platforms to ask questions, share tips, and stay updated with the latest developments.</p>
         </section>
     </main>
     </body>
